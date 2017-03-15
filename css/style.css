@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*Header stuff for all pages, the nav bar*/
+
+header {
+    width: 100%;
+}
+
+header .nav_bar {
+    width: 100%;
+    padding: 0 10%;
+    height: 90px;
+    position: fixed;
+    margin-bottom: 5px;
+    z-index: 10;
+    background-color: rgb(231, 231, 231);
+}
+
+.img_circle {
+    padding-top: 3px;
+    border-radius: 50%;
+    width: 85px;
+    float: left;
+}
+
+.clear_fix::after {
+    display: block;
+    clear: both;
+    /* ensure some older compatability */
+    height: 0;
+    font-size: 0;
+    content: " ";
+    /* extra backup */
+    visibility: hidden;
+}
+
+header h1 {
+    width: 80%;
+    text-align: left;
+    height: 50px;
+    line-height: 50px;
+    color: LightSlateGrey;
+    margin: 0 auto;
+}
+
+header nav {
+    float: right;
+    width: 80%;
+    display: inline-block;
+}
+
+header nav ul {
+    list-style-type: none;
+    text-align: center;
+    font-size: 0em;
+}
+
+header nav li {
+    font-size: 18px;
+    height: 40px;
+    line-height: 40px;
+    width: 25%;
+    display: inline-block;
+}
+
+header nav ul a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    transition: all 1s;
+}
+
+nav a:hover {
+    background-color: rgba(10, 10, 10, 0.5);
+    color: white;
+}
+
+header .active {
+    color: #999;
+}
+
+
+/*Header stuff for home page
+  Includes the cover pic
+*/
+
+header .cover_pic {
+    width: 100%;
+    padding-top: 90px;
+}
+
+.cover_pic img {
+    width: 100%;
+}
+
+
+/*Footer*/
+
+footer .contact {
+    float: left;
+    text-align: left;
+    padding: 10px 20px 10px 20px;
+    margin: 0 auto;
+}
+
+
+/*index.html*/
+.shifter{
+    padding-top: 100px;
+}
+main .body {
+    display: block;
+    height: auto;
+    overflow: auto;
+    /*position: relative;*/
+}
+
+main .left_side {
+    float: left;
+    width: 50%;
+    height: auto;
+    border-right: thick solid #ff0000;
+    padding: 3px;
+}
+
+main .right_side {
+    float: right;
+    width: 50%;
+    height: auto;
+    padding-right: 3px;
+}
+
+main .body h1 {
+    text-align: center;
+}
+
+main .body ul {
+    padding-left: 20px;
+}
+
+/*projects.html*/
+main .proj{
+    padding-bottom: 10px;
+}
+main .left{
+    float: left; 
+    width: 70%;
+    height: auto;
+    padding: 5px;
+}
+main .right{
+    float: right;
+    width: 83%;
+    height: auto;
+    padding: 5px;
+}
+
+main .left_img{
+    padding-left: 3%;
+}

@@ -156,15 +156,15 @@ main .left{
     float: left; 
     width: 70%;
     height: auto;
-    padding: 5px;
+    padding: 1%;
 }
 main .right{
     float: right;
     width: 83%;
     height: auto;
-    padding: 5px;
+    padding: 1%;
 }
 
 main .left_img{
-    padding-left: 3%;
+    padding-left: 1%;
 }

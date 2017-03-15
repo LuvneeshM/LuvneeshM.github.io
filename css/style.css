@@ -70,6 +70,24 @@ footer .contact {
 }
 
 
+/*logo.html*/
+
+main figure {
+    text-align: center;
+    padding-top: 5px; 
+}
+
+main .draft_1 h2, .draft_2 h2, .draft_3 h2, .future_drafts h2{
+    padding: 10px;
+}
+
+main p{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+
 /*desktops*/
 
 @media only screen and (min-width: 1270px) {
@@ -131,7 +149,7 @@ footer .contact {
         height: auto;
         padding-right: 3px;
     }
-    main .body h1 {
+    main h1 {
         text-align: center;
     }
     main .body ul {
@@ -221,7 +239,7 @@ footer .contact {
         height: auto;
         padding-right: 3px;
     }
-    main .body h1 {
+    main h1 {
         text-align: center;
     }
     main .body ul {
@@ -311,7 +329,7 @@ footer .contact {
         height: auto;
         padding-right: 3px;
     }
-    main .body h1 {
+    main h1 {
         text-align: center;
     }
     main .body ul {
@@ -350,7 +368,7 @@ footer .contact {
     /*header*/
     header nav {
         float: right;
-        width: 75%;
+        width: 70%;
         display: inline-block;
     }
     header nav ul {
@@ -359,7 +377,7 @@ footer .contact {
         font-size: 0em;
     }
     header nav li {
-        font-size: 18px;
+        font-size: 16px;
         height: 40px;
         line-height: 40px;
         width: 25%;
@@ -404,7 +422,7 @@ footer .contact {
         height: auto;
         padding-right: 3px;
     }
-    main .body h1 {
+    main h1 {
         text-align: center;
     }
     main .body ul {

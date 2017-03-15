@@ -9,30 +9,6 @@ html {
     height: 100%;
 }
 
-
-/*Header stuff for all pages, the nav bar*/
-
-header {
-    width: 100%;
-}
-
-header .nav_bar {
-    width: 100%;
-    padding: 0 10%;
-    height: 90px;
-    position: fixed;
-    margin-bottom: 5px;
-    z-index: 10;
-    background-color: rgb(231, 231, 231);
-}
-
-.img_circle {
-    padding-top: 3px;
-    border-radius: 50%;
-    width: 85px;
-    float: left;
-}
-
 .clear_fix::after {
     display: block;
     clear: both;
@@ -44,6 +20,20 @@ header .nav_bar {
     visibility: hidden;
 }
 
+header {
+    width: 100%;
+}
+
+header .nav_bar {
+    width: 100%;
+    padding: 0 5%;
+    height: 90px;
+    position: fixed;
+    margin-bottom: 5px;
+    z-index: 10;
+    background-color: rgb(231, 231, 231);
+}
+
 header h1 {
     width: 80%;
     text-align: left;
@@ -51,26 +41,6 @@ header h1 {
     line-height: 50px;
     color: LightSlateGrey;
     margin: 0 auto;
-}
-
-header nav {
-    float: right;
-    width: 80%;
-    display: inline-block;
-}
-
-header nav ul {
-    list-style-type: none;
-    text-align: center;
-    font-size: 0em;
-}
-
-header nav li {
-    font-size: 18px;
-    height: 40px;
-    line-height: 40px;
-    width: 25%;
-    display: inline-block;
 }
 
 header nav ul a {
@@ -90,20 +60,6 @@ header .active {
 }
 
 
-/*Header stuff for home page
-  Includes the cover pic
-*/
-
-header .cover_pic {
-    width: 100%;
-    padding-top: 90px;
-}
-
-.cover_pic img {
-    width: 100%;
-}
-
-
 /*Footer*/
 
 footer .contact {
@@ -114,57 +70,368 @@ footer .contact {
 }
 
 
-/*index.html*/
-.shifter{
-    padding-top: 100px;
-}
-main .body {
-    display: block;
-    height: auto;
-    overflow: auto;
-    /*position: relative;*/
+/*desktops*/
+
+@media only screen and (min-width: 1270px) {
+    /*Header stuff for all pages, the nav bar*/
+    header nav {
+        float: left;
+        width: 80%;
+        display: inline-block;
+    }
+    header nav ul {
+        list-style-type: none;
+        text-align: center;
+        font-size: 0em;
+    }
+    header nav li {
+        font-size: 18px;
+        height: 40px;
+        line-height: 40px;
+        width: 25%;
+        display: inline-block;
+    }
+    .img_circle {
+        padding-top: 3px;
+        margin-left: 5%;
+        border-radius: 50%;
+        width: 85px;
+        float: left;
+    }
+    /*Header stuff for home page
+     Includes the cover pic
+    */
+    header .cover_pic {
+        width: 100%;
+        padding-top: 90px;
+    }
+    .cover_pic img {
+        width: 100%;
+    }
+    /*index.html*/
+    .shifter {
+        padding-top: 100px;
+    }
+    main .body {
+        display: block;
+        height: auto;
+        overflow: auto;
+        /*position: relative;*/
+    }
+    main .left_side {
+        float: left;
+        width: 50%;
+        height: auto;
+        border-right: thick solid #ff0000;
+        padding: 3px;
+    }
+    main .right_side {
+        float: right;
+        width: 50%;
+        height: auto;
+        padding-right: 3px;
+    }
+    main .body h1 {
+        text-align: center;
+    }
+    main .body ul {
+        padding-left: 20px;
+    }
+    /*projects.html*/
+    main .proj {
+        overflow: auto;
+        padding-bottom: 10px;
+    }
+    main .left {
+        float: left;
+        width: 70%;
+        height: auto;
+        padding: 1%;
+    }
+    main .right {
+        float: right;
+        width: 83%;
+        height: auto;
+        padding: 1%;
+    }
+    main .left_img {
+        padding-left: 1%;
+    }
 }
 
-main .left_side {
-    float: left;
-    width: 50%;
-    height: auto;
-    border-right: thick solid #ff0000;
-    padding: 3px;
+
+/*tablets I think*/
+
+@media only screen and (min-width:767px) and (max-width: 1270px) {
+    /*header*/
+    header nav {
+        float: right;
+        width: 80%;
+        display: inline-block;
+    }
+    header nav ul {
+        list-style-type: none;
+        text-align: center;
+        font-size: 0em;
+    }
+    header nav li {
+        font-size: 18px;
+        height: 40px;
+        line-height: 40px;
+        width: 25%;
+        display: inline-block;
+    }
+    .img_circle {
+        padding-top: 3px;
+        margin-left: 5%;
+        border-radius: 50%;
+        width: 85px;
+        float: left;
+    }
+    /*Header stuff for home page
+     Includes the cover pic
+    */
+    header .cover_pic {
+        width: 100%;
+        padding-top: 90px;
+    }
+    .cover_pic img {
+        width: 100%;
+    }
+    /*index.html*/
+    .shifter {
+        padding-top: 100px;
+    }
+    main .body {
+        display: block;
+        height: auto;
+        overflow: auto;
+        /*position: relative;*/
+    }
+    main .left_side {
+        float: left;
+        width: 50%;
+        height: auto;
+        border-right: thick solid #ff0000;
+        padding: 3px;
+    }
+    main .right_side {
+        float: right;
+        width: 50%;
+        height: auto;
+        padding-right: 3px;
+    }
+    main .body h1 {
+        text-align: center;
+    }
+    main .body ul {
+        padding-left: 20px;
+    }
+    /*projects.html*/
+    main .proj {
+        padding-bottom: 10px;
+        overflow: auto;
+    }
+    main .left {
+        float: left;
+        width: 70%;
+        height: auto;
+        padding: 1%;
+    }
+    main .right {
+        float: right;
+        width: 70%;
+        height: auto;
+        padding: 1%;
+    }
+    main .left_img {
+        padding-left: 1%;
+    }
 }
 
-main .right_side {
-    float: right;
-    width: 50%;
-    height: auto;
-    padding-right: 3px;
+
+/*phones*/
+
+@media only screen and (min-width:600px) and (max-width: 767px) {
+    /*header*/
+    header nav {
+        float: right;
+        width: 80%;
+        display: inline-block;
+    }
+    header nav ul {
+        list-style-type: none;
+        text-align: center;
+        font-size: 0em;
+    }
+    header nav li {
+        font-size: 18px;
+        height: 40px;
+        line-height: 40px;
+        width: 25%;
+        display: inline-block;
+    }
+    .img_circle {
+        padding-top: 3px;
+        margin-left: 3%;
+        border-radius: 50%;
+        width: 85px;
+        float: left;
+    }
+    /*Header stuff for home page
+     Includes the cover pic
+    */
+    header .cover_pic {
+        width: 100%;
+        padding-top: 90px;
+    }
+    .cover_pic img {
+        width: 100%;
+    }
+    /*index.html*/
+    .shifter {
+        padding-top: 100px;
+    }
+    main .body {
+        display: block;
+        height: auto;
+        overflow: auto;
+        /*position: relative;*/
+    }
+    main .left_side {
+        float: left;
+        width: 50%;
+        height: auto;
+        border-right: thick solid #ff0000;
+        padding: 3px;
+    }
+    main .right_side {
+        float: right;
+        width: 50%;
+        height: auto;
+        padding-right: 3px;
+    }
+    main .body h1 {
+        text-align: center;
+    }
+    main .body ul {
+        padding-left: 20px;
+    }
+    /*projects.html*/
+    main .proj {
+        padding-bottom: 10px;
+        overflow: auto;
+    }
+    main .left {
+        width: 100%;
+        height: auto;
+        padding: 1%;
+    }
+    main .right {
+        width: 100%;
+        height: auto;
+        padding: 1%;
+        margin: 0 auto;
+    }
+    main .left_img {
+        display: block;
+        margin: 0 auto;
+    }
+    main .right_img {
+        display: block;
+        margin: 0 auto;
+    }
 }
 
-main .body h1 {
-    text-align: center;
-}
 
-main .body ul {
-    padding-left: 20px;
-}
+/*even older phones*/
 
-/*projects.html*/
-main .proj{
-    padding-bottom: 10px;
-}
-main .left{
-    float: left; 
-    width: 70%;
-    height: auto;
-    padding: 1%;
-}
-main .right{
-    float: right;
-    width: 83%;
-    height: auto;
-    padding: 1%;
-}
-
-main .left_img{
-    padding-left: 1%;
+@media only screen and (max-width:600px) {
+    /*header*/
+    header nav {
+        float: right;
+        width: 75%;
+        display: inline-block;
+    }
+    header nav ul {
+        list-style-type: none;
+        text-align: center;
+        font-size: 0em;
+    }
+    header nav li {
+        font-size: 18px;
+        height: 40px;
+        line-height: 40px;
+        width: 25%;
+        display: inline-block;
+    }
+    .img_circle {
+        padding-top: 3px;
+        border-radius: 50%;
+        width: 85px;
+        float: left;
+    }
+    /*Header stuff for home page
+     Includes the cover pic
+    */
+    header .cover_pic {
+        width: 100%;
+        padding-top: 90px;
+    }
+    .cover_pic img {
+        width: 100%;
+    }
+    /*index.html*/
+    .shifter {
+        padding-top: 100px;
+    }
+    main .body {
+        display: block;
+        height: auto;
+        overflow: auto;
+        /*position: relative;*/
+    }
+    main .left_side {
+        float: left;
+        width: 50%;
+        height: auto;
+        border-right: thick solid #ff0000;
+        padding: 3px;
+    }
+    main .right_side {
+        float: right;
+        width: 50%;
+        height: auto;
+        padding-right: 3px;
+    }
+    main .body h1 {
+        text-align: center;
+    }
+    main .body ul {
+        padding-left: 20px;
+    }
+    /*projects.html*/
+    main .proj {
+        padding-bottom: 10px;
+        overflow: auto;
+    }
+    main .left {
+        width: 100%;
+        height: auto;
+        padding: 1%;
+    }
+    main .right {
+        width: 100%;
+        height: auto;
+        padding: 1%;
+        margin: 0 auto;
+    }
+    main .left_img {
+        display: block;
+        margin: 0 auto;
+    }
+    main .right_img {
+        display: block;
+        margin: 0 auto;
+    }
 }

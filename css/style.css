@@ -74,18 +74,20 @@ footer .contact {
 
 main figure {
     text-align: center;
-    padding-top: 5px; 
+    padding-top: 5px;
 }
 
-main .draft_1 h2, .draft_2 h2, .draft_3 h2, .future_drafts h2{
+main .draft_1 h2,
+.draft_2 h2,
+.draft_3 h2,
+.future_drafts h2 {
     padding: 10px;
 }
 
-main p{
+main p {
     padding-left: 5px;
     padding-right: 5px;
 }
-
 
 
 /*desktops*/
@@ -103,7 +105,7 @@ main p{
         font-size: 0em;
     }
     header nav li {
-        font-size: 18px;
+        font-size: 22px;
         height: 40px;
         line-height: 40px;
         width: 25%;
@@ -148,6 +150,7 @@ main p{
         width: 50%;
         height: auto;
         padding-right: 3px;
+        word-wrap: break-word;
     }
     main h1 {
         text-align: center;
@@ -162,18 +165,25 @@ main p{
     }
     main .left {
         float: left;
-        width: 70%;
+        width: 69%;
         height: auto;
         padding: 1%;
     }
     main .right {
         float: right;
-        width: 83%;
+        width: 69%;
         height: auto;
         padding: 1%;
     }
     main .left_img {
         padding-left: 1%;
+        max-width: 29%
+        /*margin: 0 auto;*/
+    }
+    main .right_img {
+        max-width: 29%;
+        height: auto;
+        padding-right: 1%;
     }
 }
 
@@ -193,7 +203,7 @@ main p{
         font-size: 0em;
     }
     header nav li {
-        font-size: 18px;
+        font-size: 20px;
         height: 40px;
         line-height: 40px;
         width: 25%;
@@ -238,6 +248,7 @@ main p{
         width: 50%;
         height: auto;
         padding-right: 3px;
+        word-wrap: break-word;
     }
     main h1 {
         text-align: center;
@@ -252,18 +263,26 @@ main p{
     }
     main .left {
         float: left;
-        width: 70%;
+        width: 69%;
         height: auto;
         padding: 1%;
     }
     main .right {
         float: right;
-        width: 70%;
+        width: 69%;
         height: auto;
         padding: 1%;
     }
     main .left_img {
         padding-left: 1%;
+        max-width: 29%;
+        height: auto;
+        /*margin: 0 auto;*/
+    }
+    main .right_img {
+        max-width: 29%;
+        height: auto;
+        padding-right: 1%;
     }
 }
 
@@ -328,6 +347,7 @@ main p{
         width: 50%;
         height: auto;
         padding-right: 3px;
+        word-wrap: break-word;
     }
     main h1 {
         text-align: center;
@@ -354,10 +374,14 @@ main p{
     main .left_img {
         display: block;
         margin: 0 auto;
+        max-width: 90%;
+        height: auto;
     }
     main .right_img {
         display: block;
         margin: 0 auto;
+        max-width: 90%;
+        height: auto;
     }
 }
 
@@ -377,11 +401,20 @@ main p{
         font-size: 0em;
     }
     header nav li {
-        font-size: 16px;
+        font-size: 14px;
         height: 40px;
         line-height: 40px;
         width: 25%;
         display: inline-block;
+    }
+    header .nav_bar {
+        width: 100%;
+        padding: 0 1%;
+        height: 90px;
+        position: fixed;
+        margin-bottom: 5px;
+        z-index: 10;
+        background-color: rgb(231, 231, 231);
     }
     .img_circle {
         padding-top: 3px;
@@ -421,6 +454,7 @@ main p{
         width: 50%;
         height: auto;
         padding-right: 3px;
+        word-wrap: break-word;
     }
     main h1 {
         text-align: center;
@@ -447,9 +481,13 @@ main p{
     main .left_img {
         display: block;
         margin: 0 auto;
+        max-width: 90%;
+        height: auto;
     }
     main .right_img {
         display: block;
         margin: 0 auto;
+        max-width: 90%;
+        height: auto;
     }
 }

@@ -81,14 +81,101 @@ main .draft_1 h2,
 .draft_2 h2,
 .draft_3 h2,
 .future_drafts h2 {
-    padding: 10px;
+    padding-left: 25px;
+    padding-top: 10px; 
 }
 
 main p {
     padding-left: 5px;
     padding-right: 5px;
+    padding-bottom: 10px;
 }
 
+main figure img{
+    max-width: 80%;
+    height: auto;
+}
+
+main .slideshow_container{
+    max-width: 25%;
+    position:  relative;
+    margin: auto;
+}
+
+main .slides, main .slidesD2, main .slidesD3{
+    display: none;
+    margin: auto;
+    max-width: 90%;
+    height: auto;
+}
+
+main p{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+main .prev, .next{
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: black;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+/*position next button to right*/
+main .next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover{
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+}
+
+main .dot, main .dotD2, main .dotD3{
+    cursor:pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+main .slide_dots{
+    text-align: center;
+}
+
+main .slide_dots .active, main .dot:hover, main .dotD2:hover, main .dotD3:hover{
+    background-color: #717171;
+}
+
+main .draft_2 .picked_these{
+    max-width: 50%;
+    position:  relative;
+    margin: auto;
+}
+
+main .draft_2 .picked_these img{
+    margin: 0 auto;
+    max-width: 31%;
+    height: auto;
+    padding-right: 1%;
+}
+
+main .future_drafts_in {
+    text-align: center;
+}
+
+main .future_drafts img{
+    max-width: 20%;
+    height: auto;
+    margin: 0 auto;
+}
 
 /*desktops*/
 

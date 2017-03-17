@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
     width: 100%;
     height: 100%;
 }
@@ -20,34 +21,46 @@ body, html {
     visibility: hidden;
 }
 
+
 /*navigation bar
 fixed and always on top
 */
 
 header .nav_bar {
     width: 100%;
-    padding: 0 5%;
-    height: 90px;
+    padding: 0 3%;
+     min-height: 90px;
     position: fixed;
     margin-bottom: 5px;
     z-index: 10;
     background-color: rgb(231, 231, 231);
 }
+    header nav {
+        float: right;
+        /*width: 80%;*/
+        display: inline-block;
+    }
 
-header h1 {
-    width: 80%;
-    text-align: left;
-    height: 50px;
-    line-height: 50px;
-    color: LightSlateGrey;
-    margin: 0 auto;
+header nav ul {
+    list-style-type: none;
+    text-align: center;
+    font-size: 0em;
 }
 
 header nav ul a {
     text-decoration: none;
     color: #000;
     display: block;
-    transition: all 1s;
+    transition: all 0.5s;
+}
+
+header nav li {
+    font-size: 22px;
+    height: 40px;
+    line-height: 40px;
+    /*width: 25%;*/
+    padding-right: 10px;
+    display: inline-block;
 }
 
 nav a:hover {
@@ -59,38 +72,28 @@ header .active {
     color: #999;
 }
 
-/*index.html*/
-/*if you are in a phone or tablet for the cover pic*/
- header .cover_pic_parallax {
-        /*padding-top: 90px;*/
-        background-image: url('../images/cover-pic.jpg');
-        height: 100vh;
-        /*the affect*/
-        background-attachment: scroll;
-        background-position: center;
-        background-repeat: no-repeat;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    }
-main .FAQ h3{
-    padding-left: 10px;
+.img_circle {
+    padding-top: 3px;
+    margin-left: 1%;
+    border-radius: 50%;
+    width: 85px;
+    float: left;
 }
-
-main .right_side ul{
-    list-style: none;
-    margin-left: 0;
-    padding-left: 0;
-    padding-bottom: 10px;
-}
-
-main .right_side ul li:before{
-    content: "»";
-    padding-right: 10px;
+header h1 {
+    width: 90%;
+    text-align: left;
+    height: 50px;
+    line-height: 50px;
+    color: LightSlateGrey;
+    margin: 0 auto;
 }
 
 /*Footer*/
+
+footer hr {
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
 
 footer .contact {
     float: left;
@@ -100,6 +103,73 @@ footer .contact {
 }
 
 
+/*index.html*/
+
+
+/*if you are in a phone or tablet for the cover pic*/
+
+header .cover_pic_parallax {
+    /*padding-top: 90px;*/
+    background-image: url('../images/cover-pic21.jpg');
+    height: 100vh;
+    /*the affect*/
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.shifter {
+    padding-top: 100px;
+}
+
+main .body {
+    display: block;
+    height: auto;
+    overflow: auto;
+    /*position: relative;*/
+}
+
+main .left_side {
+    float: left;
+    width: 50%;
+    height: auto;
+    padding: 3px;
+}
+
+main .right_side {
+    float: right;
+    width: 50%;
+    height: auto;
+    padding-right: 3px;
+    word-wrap: break-word;
+}
+
+main .FAQ h3 {
+    padding-left: 10px;
+}
+
+main .right_side ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    padding-bottom: 10px;
+}
+
+main .right_side ul li:before {
+    content: "»";
+    padding-right: 10px;
+}
+main h2 {
+        text-align: center;
+}
+main .body ul {
+        padding-left: 20px;
+}
+
 /*logo.html*/
 
 main figure {
@@ -107,7 +177,7 @@ main figure {
     padding-top: 5px;
 }
 
-main h1{
+main h1 {
     text-align: center;
 }
 
@@ -129,6 +199,7 @@ main figure img {
     max-width: 80%;
     height: auto;
 }
+
 
 /*slides shows*/
 
@@ -152,7 +223,8 @@ main p {
     padding-right: 5%;
 }
 
-main .prev, main .next {
+main .prev,
+main .next {
     cursor: pointer;
     position: absolute;
     width: auto;
@@ -223,80 +295,36 @@ main .future_drafts img {
     margin: 0 auto;
 }
 
-    
+/*projects.html*/
+main .proj {
+        overflow: auto;
+        padding-bottom: 10px;
+    }
+
 
 /*desktops*/
 
 @media only screen and (min-width: 1270px) {
     /*Header stuff for all pages, the nav bar*/
-    header nav {
-        float: left;
-        width: 80%;
-        display: inline-block;
-    }
-    header nav ul {
-        list-style-type: none;
-        text-align: center;
-        font-size: 0em;
-    }
     header nav li {
         font-size: 22px;
-        height: 40px;
-        line-height: 40px;
-        width: 25%;
-        display: inline-block;
-    }
-    .img_circle {
-        padding-top: 3px;
-        margin-left: 5%;
-        border-radius: 50%;
-        width: 85px;
-        float: left;
     }
     /*Header stuff for home page
      the cover pic
      parallax scrolling is cool
     */
+    /*index.html*/
     header .cover_pic_parallax {
+        background-image: url('../images/cover-pic.jpg');
         /*the affect*/
         background-attachment: fixed;
     }
-    /*index.html*/
-    .shifter {
-        padding-top: 100px;
-    }
-    main .body {
-        display: table;
-        overflow: auto;
-        /*position: relative;*/
-    }
-    main .left_side {
-        /*float: left;*/
-        display: table-cell;
-        width: 50%;
-        /*height: 100%;*/
-        padding: 3px;
-    }
-    main .right_side {
-        /*float: right;*/
-        display: table-cell;        
-        width: 50%;
-        /*height: auto;*/
-        padding-right: 3px;
-        word-wrap: break-word;
-    }
     main h2 {
-        text-align: center;
         padding-bottom: 10px;
     }
-    main .body ul {
-        padding-left: 20px;
-    }
+    
     /*projects.html*/
-    main .proj {
-        overflow: auto;
-        padding-bottom: 10px;
-    }
+    
     main .left {
         float: left;
         width: 69%;
@@ -326,72 +354,21 @@ main .future_drafts img {
 
 @media only screen and (min-width:767px) and (max-width: 1270px) {
     /*header*/
-    header nav {
-        float: right;
-        width: 80%;
-        display: inline-block;
-    }
-    header nav ul {
-        list-style-type: none;
-        text-align: center;
-        font-size: 0em;
-    }
+
     header nav li {
         font-size: 20px;
-        height: 40px;
-        line-height: 40px;
-        width: 25%;
-        display: inline-block;
-    }
-    .img_circle {
-        padding-top: 3px;
-        margin-left: 5%;
-        border-radius: 50%;
-        width: 85px;
-        float: left;
     }
     /*Header stuff for home page
      Includes the cover pic
     */
     header .cover_pic_parallax {
+        background-image: url('../images/cover-pic.jpg');
         background-attachment: fixed;
     }
-
     /*index.html*/
-    .shifter {
-        padding-top: 100px;
-    }
-    main .body {
-        display: block;
-        height: auto;
-        overflow: auto;
-        /*position: relative;*/
-    }
-    main .left_side {
-        float: left;
-        width: 50%;
-        height: auto;
-        border-right: thick solid #ff0000;
-        padding: 3px;
-    }
-    main .right_side {
-        float: right;
-        width: 50%;
-        height: auto;
-        padding-right: 3px;
-        word-wrap: break-word;
-    }
-    main h2 {
-        text-align: center;
-    }
-    main .body ul {
-        padding-left: 20px;
-    }
+
     /*projects.html*/
-    main .proj {
-        padding-bottom: 10px;
-        overflow: auto;
-    }
+
     main .left {
         float: left;
         width: 69%;
@@ -422,66 +399,17 @@ main .future_drafts img {
 
 @media only screen and (min-width:600px) and (max-width: 767px) {
     /*header*/
-    header nav {
-        float: right;
-        width: 80%;
-        display: inline-block;
-    }
-    header nav ul {
-        list-style-type: none;
-        text-align: center;
-        font-size: 0em;
-    }
+
     header nav li {
         font-size: 18px;
-        height: 40px;
-        line-height: 40px;
-        width: 25%;
-        display: inline-block;
     }
     .img_circle {
-        padding-top: 3px;
         margin-left: 3%;
-        border-radius: 50%;
-        width: 85px;
-        float: left;
     }
-
     /*index.html*/
-    .shifter {
-        padding-top: 100px;
-    }
-    main .body {
-        display: block;
-        height: auto;
-        overflow: auto;
-        /*position: relative;*/
-    }
-    main .left_side {
-        float: left;
-        width: 50%;
-        height: auto;
-        border-right: thick solid #ff0000;
-        padding: 3px;
-    }
-    main .right_side {
-        float: right;
-        width: 50%;
-        height: auto;
-        padding-right: 3px;
-        word-wrap: break-word;
-    }
-    main h2 {
-        text-align: center;
-    }
-    main .body ul {
-        padding-left: 20px;
-    }
+
     /*projects.html*/
-    main .proj {
-        padding-bottom: 10px;
-        overflow: auto;
-    }
+
     main .left {
         width: 100%;
         height: auto;
@@ -523,73 +451,26 @@ main .future_drafts img {
 
 @media only screen and (max-width:600px) {
     /*header*/
-    header nav {
-        float: right;
-        width: 70%;
-        display: inline-block;
-    }
-    header nav ul {
-        list-style-type: none;
-        text-align: center;
-        font-size: 0em;
-    }
+
     header nav li {
         font-size: 14px;
-        height: 40px;
-        line-height: 40px;
-        width: 25%;
-        display: inline-block;
     }
     header .nav_bar {
         width: 100%;
         padding: 0 1%;
-        height: 90px;
+        min-height: 90px;
         position: fixed;
         margin-bottom: 5px;
         z-index: 10;
         background-color: rgb(231, 231, 231);
     }
     .img_circle {
-        padding-top: 3px;
-        border-radius: 50%;
-        width: 85px;
-        float: left;
+        margin-left: 1%;
     }
     /*index.html*/
-    .shifter {
-        padding-top: 100px;
-    }
-    main .body {
-        display: block;
-        height: auto;
-        overflow: auto;
-        /*position: relative;*/
-    }
-    main .left_side {
-        float: left;
-        width: 50%;
-        height: auto;
-        border-right: thick solid #ff0000;
-        padding: 3px;
-    }
-    main .right_side {
-        float: right;
-        width: 50%;
-        height: auto;
-        padding-right: 3px;
-        word-wrap: break-word;
-    }
-    main h2 {
-        text-align: center;
-    }
-    main .body ul {
-        padding-left: 20px;
-    }
+
     /*projects.html*/
-    main .proj {
-        padding-bottom: 10px;
-        overflow: auto;
-    }
+
     main .left {
         width: 100%;
         height: auto;

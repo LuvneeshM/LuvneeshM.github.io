@@ -20,12 +20,6 @@ body, html {
     visibility: hidden;
 }
 
-header {
-    width: 100%;
-    height: 100%;
-}
-
-
 /*navigation bar
 fixed and always on top
 */
@@ -65,6 +59,35 @@ header .active {
     color: #999;
 }
 
+/*index.html*/
+/*if you are in a phone or tablet for the cover pic*/
+ header .cover_pic_parallax {
+        /*padding-top: 90px;*/
+        background-image: url('../images/cover-pic.jpg');
+        height: 100vh;
+        /*the affect*/
+        background-attachment: scroll;
+        background-position: center;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+main .FAQ h3{
+    padding-left: 10px;
+}
+
+main .right_side ul{
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+main .right_side ul li:before{
+    content: "»";
+    padding-right: 10px;
+}
 
 /*Footer*/
 
@@ -81,6 +104,10 @@ footer .contact {
 main figure {
     text-align: center;
     padding-top: 5px;
+}
+
+main h1{
+    text-align: center;
 }
 
 main .draft_1 h2,
@@ -101,7 +128,6 @@ main figure img {
     max-width: 80%;
     height: auto;
 }
-
 
 /*slides shows*/
 
@@ -196,20 +222,7 @@ main .future_drafts img {
     margin: 0 auto;
 }
 
-/*if you are in a phone or tablet for the cover pic*/
- header .cover_pic_parallax {
-        /*padding-top: 90px;*/
-        background-image: url('../images/cover-pic.jpg');
-        height: 100%;
-        /*the affect*/
-        background-attachment: scroll;
-        background-position: center;
-        background-repeat: no-repeat;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    }
+    
 
 /*desktops*/
 
@@ -252,7 +265,7 @@ main .future_drafts img {
         padding-top: 100px;
     }
     main .body {
-        display: block;
+        display: table;
         height: auto;
         overflow: auto;
         /*position: relative;*/
@@ -260,9 +273,13 @@ main .future_drafts img {
     main .left_side {
         float: left;
         width: 50%;
-        height: auto;
+        height: 100%;
         border-right: thick solid #ff0000;
         padding: 3px;
+    }
+    main .content_left_side{
+        height: 100%;
+        display: inline-block;
     }
     main .right_side {
         float: right;
@@ -271,8 +288,9 @@ main .future_drafts img {
         padding-right: 3px;
         word-wrap: break-word;
     }
-    main h1 {
+    main h2 {
         text-align: center;
+        padding-bottom: 10px;
     }
     main .body ul {
         padding-left: 20px;
@@ -366,7 +384,7 @@ main .future_drafts img {
         padding-right: 3px;
         word-wrap: break-word;
     }
-    main h1 {
+    main h2 {
         text-align: center;
     }
     main .body ul {
@@ -456,7 +474,7 @@ main .future_drafts img {
         padding-right: 3px;
         word-wrap: break-word;
     }
-    main h1 {
+    main h2 {
         text-align: center;
     }
     main .body ul {
@@ -564,7 +582,7 @@ main .future_drafts img {
         padding-right: 3px;
         word-wrap: break-word;
     }
-    main h1 {
+    main h2 {
         text-align: center;
     }
     main .body ul {

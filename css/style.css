@@ -82,6 +82,7 @@ main .right_side ul{
     list-style: none;
     margin-left: 0;
     padding-left: 0;
+    padding-bottom: 10px;
 }
 
 main .right_side ul li:before{
@@ -266,25 +267,22 @@ main .future_drafts img {
     }
     main .body {
         display: table;
-        height: auto;
         overflow: auto;
         /*position: relative;*/
     }
     main .left_side {
-        float: left;
+        /*float: left;*/
+        display: table-cell;
         width: 50%;
-        height: 100%;
+        /*height: 100%;*/
         border-right: thick solid #ff0000;
         padding: 3px;
     }
-    main .content_left_side{
-        height: 100%;
-        display: inline-block;
-    }
     main .right_side {
-        float: right;
+        /*float: right;*/
+        display: table-cell;        
         width: 50%;
-        height: auto;
+        /*height: auto;*/
         padding-right: 3px;
         word-wrap: break-word;
     }

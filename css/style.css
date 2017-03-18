@@ -36,12 +36,13 @@ header .nav_bar {
     z-index: 10;
     background-color: rgb(231, 231, 231);
 }
-    header nav {
-        float: right;
-        height: 65px;
-        line-height: 65px;
-        margin: auto;
-    }
+
+header nav {
+    float: right;
+    height: 65px;
+    line-height: 65px;
+    margin: auto;
+}
 
 header nav ul {
     list-style-type: none;
@@ -79,9 +80,11 @@ header .active {
     height: 60px;
     float: left;
 }
-header h1{
+
+header h1 {
     font-family: "Helvetica", sans-serif;
 }
+
 header .myNickName {
     /*width: 33%;*/
     float: left;
@@ -91,7 +94,8 @@ header .myNickName {
     margin: 0 auto;
     padding-left: 5px;
 }
-header .myName{
+
+header .myName {
     /*width: 33%;*/
     float: left;
     text-align: left;
@@ -100,6 +104,7 @@ header .myName{
     margin: 0 auto;
     padding-left: 5px;
 }
+
 
 /*Footer*/
 
@@ -117,6 +122,7 @@ footer .contact {
 
 
 /*index.html*/
+
 
 /*if you are in a phone or tablet for the cover pic*/
 
@@ -161,26 +167,38 @@ main .right_side {
 }
 
 main .FAQ h3 {
-    padding-left: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
-main .right_side ul {
+main .FAQ p {
+    padding-left: 8%;
+}
+
+
+/*right side bullet points */
+main .right_side ul{
     list-style: none;
-    margin-left: 0;
-    padding-left: 0;
+    padding-left: 5%;
     padding-bottom: 10px;
 }
+main .right_side .FAQ ul {
+    padding-left: 8%;
+}
+
+
 
 main .right_side ul li:before {
     content: "»";
     padding-right: 10px;
 }
+
 main h2 {
-        text-align: center;
+    text-align: center;
 }
-main .body ul {
-        padding-left: 20px;
-}
+
+
+
 
 /*logo.html*/
 
@@ -307,18 +325,19 @@ main .future_drafts img {
     margin: 0 auto;
 }
 
+
 /*projects.html*/
+
 main .proj {
-        overflow: auto;
-        padding-bottom: 10px;
-    }
+    overflow: auto;
+    padding-bottom: 10px;
+}
 
 
 /*desktops*/
 
 @media only screen and (min-width: 1270px) {
     /*Header stuff for all pages, the nav bar*/
-    
     header nav li {
         font-size: 22px;
     }
@@ -335,14 +354,12 @@ main .proj {
     main h2 {
         padding-bottom: 10px;
     }
-    
     /*projects.html*/
-    
     main .left {
         float: left;
         width: 69%;
         height: auto;
-        padding: 1%;
+        padding: 1% 2%;
     }
     main .right {
         float: right;
@@ -368,11 +385,11 @@ main .proj {
 @media only screen and (min-width:767px) and (max-width: 1270px) {
     /*header*/
     header .myNickName {
-    font-size: 22px;
-}
-header .myName{
-    font-size: 22px;
-}
+        font-size: 22px;
+    }
+    header .myName {
+        font-size: 22px;
+    }
     header nav li {
         font-size: 20px;
     }
@@ -384,20 +401,18 @@ header .myName{
         background-attachment: fixed;
     }
     /*index.html*/
-
     /*projects.html*/
-
     main .left {
         float: left;
-        width: 69%;
+        width: 63%;
         height: auto;
-        padding: 1%;
+        padding: 1% 2% 1% 5%;
     }
     main .right {
         float: right;
         width: 69%;
         height: auto;
-        padding: 1%;
+        padding: 1% 5% 1% 1%;
     }
     main .left_img {
         padding-left: 1%;
@@ -418,23 +433,34 @@ header .myName{
 @media only screen and (min-width:600px) and (max-width: 767px) {
     /*header*/
     header .myNickName {
-    font-size: 18px;
-}
-header .myName{
-    font-size: 18px;
-    padding-left: 5px;
-}
+        font-size: 18px;
+    }
+    header .myName {
+        font-size: 18px;
+        padding-left: 5px;
+    }
     header nav li {
         font-size: 14px;
-        padding-right:2px; 
+        padding-right: 2px;
     }
     .img_circle {
         margin-left: 3%;
     }
     /*index.html*/
-
+    main .left_side {
+        float: left;
+        width: 100%;
+        height: auto;
+        padding: 3px;
+    }
+    main .right_side {
+        float: right;
+        width: 100%;
+        height: auto;
+        padding-right: 3px;
+        word-wrap: break-word;
+    }
     /*projects.html*/
-
     main .left {
         width: 100%;
         height: auto;
@@ -477,12 +503,12 @@ header .myName{
 @media only screen and (max-width:600px) {
     /*header*/
     header .myNickName {
-    font-size: 15px;
-}
-header .myName{
-    font-size: 15px;
-    padding-left: 5px;
-}
+        font-size: 15px;
+    }
+    header .myName {
+        font-size: 15px;
+        padding-left: 5px;
+    }
     header nav li {
         font-size: 12px;
         padding-right: 2px;
@@ -500,9 +526,20 @@ header .myName{
         margin-left: 1%;
     }
     /*index.html*/
-
+        main .left_side {
+        float: left;
+        width: 100%;
+        height: auto;
+        padding: 3px;
+    }
+    main .right_side {
+        float: right;
+        width: 100%;
+        height: auto;
+        padding-right: 3px;
+        word-wrap: break-word;
+    }
     /*projects.html*/
-
     main .left {
         width: 100%;
         height: auto;

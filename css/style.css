@@ -123,7 +123,6 @@ footer .contact {
 
 /*index.html*/
 
-
 /*if you are in a phone or tablet for the cover pic*/
 
 header .cover_pic_parallax {
@@ -175,7 +174,6 @@ main .FAQ p {
     padding-left: 8%;
 }
 
-
 /*right side bullet points */
 main .right_side ul{
     list-style: none;
@@ -186,8 +184,6 @@ main .right_side .FAQ ul {
     padding-left: 8%;
 }
 
-
-
 main .right_side ul li:before {
     content: "»";
     padding-right: 10px;
@@ -197,8 +193,9 @@ main h2 {
     text-align: center;
 }
 
-
-
+main .starter_words h1{
+    padding-bottom: 16px;
+}
 
 /*logo.html*/
 

@@ -8,6 +8,7 @@ body,
 html {
     width: 100%;
     height: 100%;
+    font-family: "Open Sans", sans-serif;
 }
 
 .clear_fix::after {
@@ -78,11 +79,13 @@ header .active {
     height: 60px;
     float: left;
 }
+header h1{
+    font-family: "Helvetica", sans-serif;
+}
 header .myNickName {
     /*width: 33%;*/
     float: left;
     text-align: left;
-    height: 65px;
     line-height: 65px;
     color: LightSlateGrey;
     margin: 0 auto;
@@ -92,11 +95,10 @@ header .myName{
     /*width: 33%;*/
     float: left;
     text-align: left;
-    height: 65px;
     line-height: 65px;
     color: LightSlateGrey;
     margin: 0 auto;
-    padding-left: 15px;
+    padding-left: 5px;
 }
 
 /*Footer*/
@@ -116,7 +118,6 @@ footer .contact {
 
 /*index.html*/
 
-
 /*if you are in a phone or tablet for the cover pic*/
 
 header .cover_pic_parallax {
@@ -134,7 +135,7 @@ header .cover_pic_parallax {
 }
 
 .shifter {
-    padding-top: 100px;
+    padding-top: 70px;
 }
 
 main .body {
@@ -317,6 +318,7 @@ main .proj {
 
 @media only screen and (min-width: 1270px) {
     /*Header stuff for all pages, the nav bar*/
+    
     header nav li {
         font-size: 22px;
     }
@@ -365,7 +367,12 @@ main .proj {
 
 @media only screen and (min-width:767px) and (max-width: 1270px) {
     /*header*/
-
+    header .myNickName {
+    font-size: 22px;
+}
+header .myName{
+    font-size: 22px;
+}
     header nav li {
         font-size: 20px;
     }
@@ -410,9 +417,16 @@ main .proj {
 
 @media only screen and (min-width:600px) and (max-width: 767px) {
     /*header*/
-
+    header .myNickName {
+    font-size: 18px;
+}
+header .myName{
+    font-size: 18px;
+    padding-left: 5px;
+}
     header nav li {
-        font-size: 18px;
+        font-size: 14px;
+        padding-right:2px; 
     }
     .img_circle {
         margin-left: 3%;
@@ -462,9 +476,16 @@ main .proj {
 
 @media only screen and (max-width:600px) {
     /*header*/
-
+    header .myNickName {
+    font-size: 15px;
+}
+header .myName{
+    font-size: 15px;
+    padding-left: 5px;
+}
     header nav li {
-        font-size: 14px;
+        font-size: 12px;
+        padding-right: 2px;
     }
     header .nav_bar {
         width: 100%;

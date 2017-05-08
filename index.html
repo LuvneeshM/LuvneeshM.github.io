@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang=en>
 
 <head>
     <meta charset="utf-8">
@@ -9,97 +9,95 @@
     <meta name="keywords" content="Profile, Game Engineer, Game Designer, Game Programmer">
     <meta name="author" content="Luvneesh Mugrai">
     <!-- CSS Below -->
+    <link rel="stylesheet" type="text/css" href="js/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <!-- header css -->
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/main_stuff.css">
     <!-- Fonts, thanks Google -->
     <link href="https://fonts.googleapis.com/css?family=Helvetica" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/style.css">
     <!-- Used for soical link icons -->
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
+<body class="home_page">
     <header class="clear_fix">
         <div class="nav_bar">
-            <a href="#"><img class="img_circle" src="images/ThisIsMe.jpg"></a>
+            <a href="index.html"><img class="img_circle" src="images/logo.jpg"></a>
             <h1 class="myName">LUVNEESH MUGRAI</h1>
-            <h1 class="myNickName"> &ltThisIsMe&gt   </h1>            
-            <nav>
-                <ul>
-                    <!-- <li><a href="#"><img class="img_circle" src="images/ThisIsMe.jpg"></a></li> -->
-                    <li><a href="index.html" class="active">About</a></li>
-                    <li><a href="logo.html">Logo</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="Luvneesh_Mugrai_Resume.pdf" target="_blank">Resume</a></li>
-                </ul>
-            </nav>
+            <h1 class="myNickName"> &ltThisIsMe&gt   </h1>
+            <ul class="nav navbar-nav navbar-right">
+                <!-- hamburger drop down menu -->
+                <li>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="menu" aria-haspopup="true" aria-expanded="false"><img class="hamburger_icon" src="images/menu-icon-white.png"> </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="faq.html">Q&A</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
         <div class="cover_pic_parallax">
             <!-- <img src="images/cover-pic.jpg"> -->
+            <div id="arrow_bounce">
+                <i class="fa fa-angle-down fa-2x"></i>
+            </div>
         </div>
     </header>
     <main>
-        <br>
-        <div class="body clear_fix">
-            <div class="starter_words">
-                <h1>Visionary. Game Programmer. Virtual Reality.</h1>
+        <div id="page_wrap">
+            <div class="body clear_fix">
+                <div class="starter_words">
+                    <h1>Visionary. Game Programmer. Virtual Reality.</h1>
                 </div>
-            <div class="left_side">
-                <div>
-                    <h2>Who am I?</h2>
-                    <p>My name is Luvneesh Mugrai and welcome to my site. In case you are curious to know about me. I am currently attending New York University Tandon School of Engineering and pursing a Bachelor’s in Computer Science, with two minors in Game Engineering and Integrated Digital Media. </p>
-                    <p>I have been developing games since high school and now am working with two friends on our attempt at a startup, Gilly Works. A number of my games are available on my GitHub and include ways to be able to download and play each. I also linked a few of them here over on the Projects Page.</p>
-                    <p>I have been making strides to expand my knowledge and explore new areas, such as Web Development, Software Engineering, and Artificial Intelligence. For the prior two, I have been taking courses at my college and working on some projects, such as this website. As for the ladder of the three, I currently an artificial intelligence researching assistant at the Game Innovation Lab at NYU Tandon. I am responsible for developing an AI to mimic human player gameplay for a game, Awkward Date, created by the PhD student for whom I am working.</p>
-                    <p>Feel free to contact me anytime by email if you want to discuss some of my projects, experience, or just want someone with whom you may talk. </p>
-                    <p>So now you know, this is me.</p>
-                </div> 
-                <div>
-                    <h2>Aspirations</h2>
-                    <p>Watching Star Trek as a kid, I fell in love with the idea of a Holodeck and virtual reality. Now I aspire to not only enter the virtual reality industry, but also find that merger between virtual reality and gaming and break it wide open. I want to develop and immersive room that places you directly in the center of a game, is fully interactive and has the same feel as that from the Holodeck.</p>
+                <div class="container">
+                    <div class="flex-row">
+                        <!-- polariods -->
+                        <!-- if on phone show in 1(12), tablet show in 2(6), else 4(3)-->
+                        <!-- About me -->
+                        <div class="flex-item polaroid aboutP">
+                            <a href="about.html">
+                                <img src="images/ThisIsMe2.1.jpg" alt="Me">
+                                <h2>About</h2>
+                            </a>
+                        </div>
+                        <!-- Projects -->
+                        <div class="flex-item polaroid projP">
+                            <a href="projects.html">
+                                <img src="images/projects-img.PNG">
+                                <h2>Projects</h2>
+                            </a>
+                        </div>
+                        <!-- Contact -->
+                        <div class="flex-item polaroid qaP">
+                            <a href="faq.html">
+                                <img src="images/qa.png">
+                                <!-- credit where credit is due -->
+                                <!-- Q&A by Milky - Digital innovation from the Noun Project -->
+                                <h2>Q&A</h2>
+                            </a>
+                        </div>
+                        <!-- Resume -->
+                        <div class="flex-item polaroid resumeP">
+                            <a href="#">
+                                <img src="images/resume-img-icon.PNG">
+                                <h2>Resume</h2>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="right_side">
-                <div class="FAQ">
-                    <h2>FAQ</h2>
-                    <h3>What languages do you know?</h3>
-                    <p>C/C++; Java; Python; HTML; CSS; JavaScript</p>
-                    <h3>Why computer science?</h3>
-                    <p>It blows my mind with what you are able to accomplish when in the driver seat, writing the programs. To add to this, I enjoy the freedom of being able to do something in way that suits me and having the power of being in control, making the technology do as I program.</p>
-                    <h3>What bores you?</h3>
-                    <ul>
-                        <li>Presentations in which a person uses a PowerPoint to only read off the screen</li>
-                        <li>Talking to non-opinionated people</li>
-                        <li>Having to listen to the same stories when you meet you relatives</li>
-                    </ul>
-                    <h3>What gets you out of bed?</h3>
-                    <p>Knowing that every day is a day of its own, I make it a personal goal to be able to learn or at least think about one new thing outside of my normal spectrum. By normal spectrum I mean outside of what I study. For example, while typing this up, today I thought about force fields and how scary they might actually be in real life.</p>
-                    <h3>Why?</h3>
-                    <p>My two responses are "Why not?" and "Because."</p>
-                </div>
-                <h2>Interests; Hobbies; Miscellaneous;</h2>
-                <ul>
-                    <li>When I have some spare time I like to play basketball and handball</li>
-                    <li>I enjoy reading light novels and science fiction and fantasy books.</li>
-                    <li>Playing both video and board games.</li>
-                    <li>I enjoy going for bike rides and for runs.</li>
-                    <li>Sitting down with friends and just conversing on who knows what topics.</li>
-                </ul>
             </div>
         </div>
     </main>
-    <footer>
-        <hr>
-        <div class="contact">
-            <p>Luvneesh Mugrai</p>
-            <p>Email: lm3300@nyu.edu</p>
-        </div>
-        <div>
-            <a href="https://www.facebook.com/ThisIsMeT" target="_blank">
-                <i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a>
-            <a href="https://github.com/LuvneeshM" target="_blank">
-                <i class="fa fa-github-square fa-3x " aria-hidden="true"></i></a>
-        </div>
-    </footer>
-</body>
+    <!-- Javascript stuff here -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/easing/EasePack.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/plugins/ScrollToPlugin.min.js"></script>
+    <!-- jqeury -->
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <!-- bootstrap -->
+    <script type="text/javascript" src="js/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/javascript_stuff.js"></script>
 
 </html>

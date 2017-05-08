@@ -1,3 +1,5 @@
+    var oneTime = true;
+
     // wait for dom to load
     $(document).ready(function() {
         // !-- animate the start of the page -->
@@ -9,7 +11,17 @@
         qAStuff();
         projectStuff();
 
+        invertColors();
+
     });
+
+    function invertColors(){
+        $('.invert_me').click(function(){
+            // $('*').css('color', 'antiquewhite');
+            $('main').css("background-color",'rgb(31,31,31)');
+        });
+        
+    }
 
     function homeStuff() {
         if ($('body').hasClass('home_page')) {
@@ -71,8 +83,24 @@
     //About Page
     function aboutStuff() {
         if ($('body').is('.about_page')) {
-            loadSkills();
+            loadSkillLevels();
+            $(window).scroll(function(){
+                loadSkillLevels();
+            });
             words();
+        }
+    }
+    function loadSkillLevels(){
+        var topSkills = $('.skills').offset().top;
+        var botSkills = $('.skills').offset().top + $('.skills').height();
+
+        var topScreen = $(window).scrollTop();
+        var botScreen = $(window).scrollTop() + $(window).height();
+        var botScreenMinus = botScreen-250;
+
+        if(botScreenMinus>topSkills && topScreen < botSkills && oneTime){
+            oneTime = false;
+            loadSkills();
         }
     }
     // watch them skills load up

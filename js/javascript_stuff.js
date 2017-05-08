@@ -11,17 +11,7 @@
         qAStuff();
         projectStuff();
 
-        invertColors();
-
     });
-
-    function invertColors(){
-        $('.invert_me').click(function(){
-            // $('*').css('color', 'antiquewhite');
-            $('main').css("background-color",'rgb(31,31,31)');
-        });
-        
-    }
 
     function homeStuff() {
         if ($('body').hasClass('home_page')) {
@@ -32,7 +22,8 @@
 
     function clickArrow() {
 
-        var $stuffContainer = $('#page_wrap');
+        var $stuffContainer =
+         $('#page_wrap');
 
         var $arrow = $(document.getElementById('arrow_bounce'));
 

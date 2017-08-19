@@ -148,8 +148,8 @@
         header .myNickName,
         header .myName {
             line-height: 60px;
-            font-size: 3em;
-            padding-right: 0%;
+            font-size: 2.9em;
+            padding-right: 4%;
         }
         header #arrow_bounce {
             left: 95vw;

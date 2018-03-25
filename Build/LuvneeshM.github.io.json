@@ -1,0 +1,13 @@
+{
+"companyName": "DefaultCompany",
+"productName": "Game_Design_G6",
+"dataUrl": "LuvneeshM.github.io.data.unityweb",
+"asmCodeUrl": "LuvneeshM.github.io.asm.code.unityweb",
+"asmMemoryUrl": "LuvneeshM.github.io.asm.memory.unityweb",
+"asmFrameworkUrl": "LuvneeshM.github.io.asm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}

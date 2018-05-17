@@ -1,103 +1,25 @@
 <!DOCTYPE html>
-<html lang=en>
-
-<head>
+<html lang="en-us">
+  <head>
     <meta charset="utf-8">
-    <title>ThisIsMe</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Luvneesh Mugrai Profile">
-    <meta name="keywords" content="Profile, Game Engineer, Game Designer, Game Programmer">
-    <meta name="author" content="Luvneesh Mugrai">
-    <!-- CSS Below -->
-    <link rel="stylesheet" type="text/css" href="js/bootstrap-3.3.7-dist/css/bootstrap.min.css">
-    <!-- header css -->
-    <link rel="stylesheet" type="text/css" href="css/header.css">
-    <link rel="stylesheet" type="text/css" href="css/main_stuff.css">
-    <!-- Fonts, thanks Google -->
-    <link href="https://fonts.googleapis.com/css?family=Helvetica" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <!-- Used for soical link icons -->
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-</head>
-
-<body class="home_page clear_fix">
-    <header class="clear_fix">
-        <div class="nav_bar">
-            <a href="index.html"><img class="img_circle" src="images/logo.jpg"></a>
-            <h1 class="myName">LUVNEESH</h1>
-            <h1 class="myNickName"> &ltThisIsMe&gt   </h1>
-            <ul class="nav navbar-nav navbar-right">
-                <!-- hamburger drop down menu -->
-                <li>
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="menu" aria-haspopup="true" aria-expanded="false"><img class="hamburger_icon" src="images/menu-icon-white.png"> </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="faq.html">Q&A</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <div class="cover_pic_parallax">
-            <!-- <img src="images/cover-pic.jpg"> -->
-            <div id="arrow_bounce">
-                <i class="fa fa-angle-down fa-2x"></i>
-            </div>
-        </div>
-    </header>
-    <main>
-        <div id="page_wrap">
-            <div class="body clear_fix">
-                <div class="starter_words">
-                    <h1>Visionary. Game Programmer. Virtual Reality.</h1>
-                </div>
-                <div class="container">
-                    <div class="flex-row">
-                        <!-- polariods -->
-                        <!-- if on phone show in 1(12), tablet show in 2(6), else 4(3)-->
-                        <!-- About me -->
-                        <div class="flex-item polaroid aboutP">
-                            <a href="about.html">
-                                <img src="images/ThisIsMe2.1.jpg" alt="Me">
-                                <h2>About</h2>
-                            </a>
-                        </div>
-                        <!-- Projects -->
-                        <div class="flex-item polaroid projP">
-                            <a href="projects.html">
-                                <img src="images/projects-img.PNG">
-                                <h2>Projects</h2>
-                            </a>
-                        </div>
-                        <!-- Contact -->
-                        <div class="flex-item polaroid qaP">
-                            <a href="faq.html">
-                                <img src="images/qa.png">
-                                <!-- credit where credit is due -->
-                                <!-- Q&A by Milky - Digital innovation from the Noun Project -->
-                                <h2>Q&A</h2>
-                            </a>
-                        </div>
-                        <!-- Resume -->
-                        <div class="flex-item polaroid resumeP">
-                            <a href="Luvneesh_Mugrai_Resume.pdf" target=_blank>
-                                <img src="images/resume-img-icon.PNG">
-                                <h2>Resume</h2>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    <!-- Javascript stuff here -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/easing/EasePack.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/plugins/ScrollToPlugin.min.js"></script>
-    <!-- jqeury -->
-    <script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-    <!-- bootstrap -->
-    <script type="text/javascript" src="js/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/javascript_stuff.js"></script>
-
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Match_3_UI</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>  
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/LuvneeshM.github.io.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 980px; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="title">Match_3_UI</div>
+      </div>
+    </div>
+  </body>
 </html>

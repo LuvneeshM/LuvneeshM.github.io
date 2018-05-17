@@ -1,0 +1,13 @@
+{
+"companyName": "DefaultCompany",
+"productName": "Match_3_UI",
+"dataUrl": "M3.data.unityweb",
+"asmCodeUrl": "M3.asm.code.unityweb",
+"asmMemoryUrl": "M3.asm.memory.unityweb",
+"asmFrameworkUrl": "M3.asm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}
